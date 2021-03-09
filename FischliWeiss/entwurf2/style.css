@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+.question{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color:white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.emphasis{
+    margin: -4rem;
+    font-size: 15rem;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
