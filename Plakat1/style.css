@@ -1,0 +1,13 @@
+
+.main{
+    background-color: #653e39;
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    
+    border: 2px solid black;
+}
+h1{
+    font-family: 'Jost', sans-serif;
+}
