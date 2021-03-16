@@ -2,13 +2,16 @@
 .main{
     background-color: #653e39;
     display: block;
-    margin-left: 30%;
-    margin-right: 30%;
-    border: 2px solid black;
+    margin: auto;
+    width: 38vw;
+    
+    padding-bottom:0.1rem;
 }
 h1{
     font-family: 'Jost', sans-serif;
-    font-size:14em;
+    font-size:13vw;
+    letter-spacing: -1rem;
+    line-height: 83%;
     text-align: center;
     color: #352724;
     display: block;
@@ -22,12 +25,17 @@ body{
 .red{
     background-color: #bb312e;
     display: block;
-    margin: 3rem;
-    margin-top: 0;
-    padding-top: 20rem;
+    margin: 3vw;
+    margin-top: 1vh;
+    padding-top: 25vh;
+    padding-bottom: 0.1vh;
 }
 p{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    color: #352724;
+    line-height: 90%;
     font-family: 'Jost', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5vw;
 }
 
