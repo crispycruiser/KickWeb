@@ -1,0 +1,34 @@
+body{
+    background-color:lavender;
+}
+.box1{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 10vw;
+    font-family: monospace;
+}
+
+.box1:hover{
+    background-color:cornflowerblue;
+}
+
+.box2{
+    width: 30vw;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 10vw;
+    font-family: monospace;
+    background-color: lightgreen;
+}
+.box2:hover{
+    width: 30vw;
+    height: 30vh;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 2vw;
+    font-family: monospace;
+    background-color:mistyrose;
+}
