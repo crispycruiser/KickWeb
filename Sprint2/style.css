@@ -1,0 +1,82 @@
+@keyframes fromleft {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes fromright {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes whitetocolor {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #653e39;
+    }
+}
+.main:hover{
+    transition-duration: 500ms;
+    background-color: #416c72;
+    
+}
+.red:hover{
+    transition-duration: 500ms;
+    background-color: #2e6bbb;
+    
+}
+.main{
+    animation-name: whitetocolor;
+    animation-duration: 3s;
+    background-color: #653e39;
+    display: block;
+    margin: auto;
+    width: 38vw;
+    
+    padding-bottom:0.1rem;
+}
+h1{
+    
+    animation-name: fromright;
+    animation-duration: 2s;
+    font-family: 'Jost', sans-serif;
+    font-size:13vw;
+    letter-spacing: -1rem;
+    line-height: 83%;
+    text-align: center;
+    color: #352724;
+    display: block;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+body{
+    margin: 0;
+}
+.red{
+    transition-property: all;
+    animation-name: fromleft;
+    animation-duration: 2s;
+    background-color: #bb312e;
+    display: block;
+    margin: 3vw;
+    margin-top: 1vh;
+    padding-top: 25vh;
+    padding-bottom: 0.1vh;
+}
+p{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    color: #352724;
+    line-height: 90%;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5vw;
+}
+
