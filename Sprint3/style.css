@@ -1,0 +1,223 @@
+@keyframes fromleft {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes fromright {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes whitetocolor {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #653e39;
+    }
+}
+/* HOVER TO MAKE ROTHKO PAINTING*/
+.main:hover{
+    background-color: #416c72;
+    width: 80vw;
+}
+.red:hover{
+    background-color: #5e84b4;
+    margin: 0;
+}
+.changeState{
+    color: #416c72;
+}
+.changeState2{
+    color: #5e84b4;
+}
+.main{
+    transition-duration: 500ms;
+    animation-name: whitetocolor;
+    animation-duration: 3s;
+    background-color: #653e39;
+    display: block;
+    margin: auto;
+    width: 38vw;
+    
+    padding-bottom:0.1rem;
+}
+h1{
+    animation-name: fromright;
+    animation-duration: 2s;
+    font-family: 'Jost', sans-serif;
+    font-size:13vw;
+    letter-spacing: -1rem;
+    line-height: 83%;
+    text-align: center;
+    color: #352724;
+    display: block;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+body{
+    margin: 0;
+}
+.red{
+    transition-duration: 500ms;
+    animation-name: fromleft;
+    animation-duration: 2s;
+    background-color: #bb312e;
+    display: flex;
+    margin: 3vw;
+    margin-top: 1vh;
+    padding-top: 25vh;
+    padding-bottom: 0.1vh;
+}
+
+p{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    color: #352724;
+    line-height: 90%;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5vw;
+}
+.mobile-pics{
+    display: none;
+}
+
+
+/* MEDIA QUERY for Tablet */
+
+
+@media screen and (min-width: 600px) and (max-width: 1000px)
+{
+
+
+.main:hover{
+    background-color: #4b7241;
+    width: 100vw;
+}
+.red:hover{
+    background-color: #65b45e;
+    margin: 0;
+    margin-top: 1rem;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+.red{
+    padding-top: 5rem;
+    flex-direction: column;
+}
+p{
+    margin-top: 1rem;
+    font-size: .5rem;
+    color: #4b7241
+}
+h1{
+    letter-spacing: normal;
+    color: #65b45e;
+}
+.changeState{
+    color: #65b45e;
+}
+.changeState2{
+    color: #4b7241
+}
+}
+
+/* MEDIA QUERY for Phone */
+
+
+
+@media screen and (max-width: 600px){
+    
+    .main{
+        width: 100vw;
+        height: 100vh;
+    }
+    .red{
+        padding-top: 1rem;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
+        margin-top: -2rem;
+    }
+    p{
+        margin-top: 1rem;
+        font-size: .5rem;
+    }
+    .main:hover{
+        background-color: #653e39;
+        width: 100vw;
+    }
+    .red:hover{
+        background-color: #bb312e;
+        margin-top: -2rem;
+    }
+    @keyframes topdown {
+        0%{
+            opacity: 0;
+        }
+        1%{
+            opacity: 100%;
+        }
+        99% {
+            transform:  translateY(200vw);
+            opacity: 100%;
+        }
+        100%{
+            transform:  translateY(200vw);
+            display: none;
+        }
+    }
+    @keyframes rothko {
+        0% {
+            opacity: 100%;
+        }
+        50% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    @keyframes chillida {
+        0% {
+            opacity: 0%;
+        }
+        50% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 0%;
+        }
+    }
+    .mobile-pics{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rothko{
+        width: 80%;
+        animation: rothko 10s linear infinite;
+    }
+    .chillida{
+        position: absolute;
+        width: 80%;
+        animation: chillida 10s linear infinite;
+    }
+    h1{
+        letter-spacing: normal;
+        animation-name: topdown;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transform: translateY(-50vh);
+    }
+}

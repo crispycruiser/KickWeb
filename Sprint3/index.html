@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <title>Rothko Chillida</title>
+</head>
+
+<!-- 
+    Dank Kevin hats funktoniert:
+-->
+<script>
+    function  mikeFunction() {
+        var element = document.getElementById("title");
+        element.classList.add("changeState");
+    }
+    function  yoinkFunction() {
+        var element = document.getElementById("bottext");
+        element.classList.add("changeState2");
+    }
+    window.addEventListener('load', (event) => {
+        setTimeout(
+            function(){
+                yoinkFunction();
+                mikeFunction();
+            }, 5000);
+    });
+</script>
+
+
+<body>
+    <!-- img src="A-Hofmann.jpg" alt="Vorlage" style="display: block; margin: auto; width: 650px"-->
+    <div class="main">
+        <h1 id="title">
+            Rothko<br>
+            Chillida
+        </h1>
+        <div class="red">
+            <div class="mobile-pics">
+                <img class="rothko" src="rothko.jpg" alt="Rothko">
+                <img class="chillida" src="chillida.jpg" alt="Chillida">
+            </div>
+            <p id=bottext>
+                3.III-8.IV<br>
+                Kunsthalle<br>
+                Basel<br>
+                Mark<br>
+                Rothko<br>
+                Eduardo<br>
+                Chillida
+            </p>
+        </div>
+    </div>
+</body>
+</html>
